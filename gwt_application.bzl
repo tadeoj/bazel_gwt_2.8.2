@@ -224,7 +224,7 @@ def gwt_application(
     "@jetty_webapp//jar",
     "@jetty_servlet//jar",
     "@jetty_server//jar",
-    "@jetty-util//jar",
+    "@jetty_util//jar",
     "@jetty_annotations//jar",
     "@jetty_http//jar",
     "@jetty_io//jar",
@@ -238,7 +238,7 @@ def gwt_application(
     "@jsr_250//jar",
     "@sac//jar",
     "@tapestry//jar",
-    "@jsr_350//jar",
+    "@jsr_305//jar",
     "@icu4j//jar",
     "@htmlunit//jar",
   ]
