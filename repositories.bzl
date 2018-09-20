@@ -123,55 +123,48 @@ def colt():
     native.maven_jar(
       name = "colt",
       artifact = "colt:colt:1.2.0",
-      sha1 = "0abc984f3adc760684d49e0f11ddf167ba516d4f",
     )
 
 def ant():
     native.maven_jar(
       name = "ant",
-      artifact = "org.apache.ant:ant:1.10.5",
-      sha1 = "4a48332c2df6f535d9dd9d904cd780ab26266e20",
+      artifact = "org.apache.ant:ant:1.6.5",
     )
 
 def asm():
     native.maven_jar(
       name = "asm",
-      artifact = "org.ow2.asm:asm:6.2.1",
-      sha1 = "c01b6798f81b0fc2c5faa70cbe468c275d4b50c7",
+      artifact = "org.ow2.asm:asm:5.0.3",
     )
 
 def commons_io():
     native.maven_jar(
       name = "commons_io",
-      artifact = "commons-io:commons-io:2.6",
-      sha1="815893df5f31da2ece4040fe0a12fd44b577afaf",
+      artifact = "commons-io:commons-io:2.4",
     )
 
 def gson():
     native.maven_jar(
       name = "gson",
-      artifact = "com.google.code.gson:gson:2.8.5",
-      sha1 = "f645ed69d595b24d4cf8b3fbb64cc505bede8829",
+      artifact = "com.google.code.gson:gson:2.6.2",
     )
 
 def javax_servlet():
     native.maven_jar(
       name = "javax_servlet",
-      artifact = "javax.servlet:javax.servlet-api:4.0.1",
-      sha1 = "a27082684a2ff0bf397666c3943496c44541d1ca",
+      artifact = "javax.servlet:javax.servlet-api:3.1.0",
     )
 
 def javax_validation():
     native.maven_jar(
       name = "javax_validation",
-      artifact = "javax.validation:validation-api:2.0.1.Final",
-      sha1 = "cb855558e6271b1b32e716d24cb85c7f583ce09e",
+      artifact = "javax.validation:validation-api:1.0.0.GA",
     )
 
 def javax_validation_src():
     native.http_jar(
       name = "javax_validation_src",
-      url = "http://repo1.maven.org/maven2/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final-sources.jar",
+      url = "http://repo1.maven.org/maven2/javax/validation/validation-api/2.0.1.Final/validation-api-1.0.0.GA-sources.jar",
     )
 
 def jetty_webapp():
@@ -263,14 +256,12 @@ def jsr_250():
     native.maven_jar(
       name = "jsr_250",
       artifact = "javax.annotation:javax.annotation-api:1.3.2",
-      sha1 = "934c04d3cfef185a8008e7bf34331b79730a9d43",
     )
 
 def sac():
     native.maven_jar(
       name = "sac",
       artifact = "org.w3c.css:sac:1.3",
-      sha1="cdb2dcb4e22b83d6b32b93095f644c3462739e82",
     )
 
 def tapestry():
@@ -282,20 +273,17 @@ def tapestry():
 def jsr_305():
     native.maven_jar(
       name = "jsr_305",
-      artifact = "com.google.code.findbugs:jsr305:3.0.2",
-      sha1 = "25ea2e8b0c338a877313bd4672d3fe056ea78f0d",
+      artifact = "com.google.code.findbugs:jsr305:1.3.9",
     )
 
 def icu4j():
     native.maven_jar(
       name = "icu4j",
-      artifact = "com.ibm.icu:icu4j:62.1",
-      sha1 = "7a4d00d5ec5febd252a6182e8b6e87a0a9821f81",
+      artifact = "com.ibm.icu:icu4j:50.1.1",
     )
 
 def htmlunit():
     native.maven_jar(
       name = "htmlunit",
-      artifact = "net.sourceforge.htmlunit:htmlunit:2.33",
-      sha1 = "9c84a0db5c8dac8adfd3d9af8b6f671fb5bfe652",
+      artifact = "net.sourceforge.htmlunit:htmlunit:2.19",
     )
