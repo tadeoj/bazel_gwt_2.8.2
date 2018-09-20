@@ -128,7 +128,7 @@ def colt():
 def ant():
     native.maven_jar(
       name = "ant",
-      artifact = "org.apache.ant:ant:1.6.5",
+      artifact = "org.apache.ant:ant:1.10.5",
     )
 
 def asm():
@@ -164,7 +164,7 @@ def javax_validation():
 def javax_validation_src():
     native.http_jar(
       name = "javax_validation_src",
-      url = "http://repo1.maven.org/maven2/javax/validation/validation-api/2.0.1.Final/validation-api-1.0.0.GA-sources.jar",
+      url = "http://repo1.maven.org/maven2/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA-sources.jar",
     )
 
 def jetty_webapp():
