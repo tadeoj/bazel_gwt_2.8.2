@@ -145,7 +145,7 @@ def commons_io():
 
 def gson():
     native.maven_jar(
-      name = "gson",
+      name = "com_google_code_gson_gson",
       artifact = "com.google.code.gson:gson:2.6.2",
     )
 

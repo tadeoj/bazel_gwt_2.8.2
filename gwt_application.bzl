@@ -217,7 +217,7 @@ def gwt_application(
     "@ant//jar",
     "@asm//jar",
     "@commons_io//jar",
-    "@gson//jar",
+    "@com_google_code_gson_gson//jar",
     "@javax_servlet//jar",
     "@javax_validation//jar",
     "@javax_validation_src//jar",
