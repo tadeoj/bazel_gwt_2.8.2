@@ -100,46 +100,46 @@ def gwt_repositories(
 
 def gwt_dev():
     native.maven_jar(
-      name = "gwt_dev",
+      name = "com_google_gwt_gwt_dev",
       artifact = "com.google.gwt:gwt-dev:2.8.2",
       sha1 = "7a87e060bbf129386b7ae772459fb9f87297c332",
     )
 
 def gwt_user():
     native.maven_jar(
-      name = "gwt_user",
+      name = "com_google_gwt_gwt_user",
       artifact = "com.google.gwt:gwt-user:2.8.2",
       sha1 = "a2b9be2c996a658c4e009ba652a9c6a81c88a797",
     )
 
 def gwt_servlet():
     native.maven_jar(
-      name = "gwt_servlet",
+      name = "com_google_gwt_gwt_servlet",
       artifact = "com.google.gwt:gwt-servlet:2.8.2",
       sha1 = "a538bc7b20dece1ca9c517d8ec5f6819ba2fdec9",
     )
 
 def colt():
     native.maven_jar(
-      name = "colt",
+      name = "colt_colt",
       artifact = "colt:colt:1.2.0",
     )
 
 def ant():
     native.maven_jar(
-      name = "ant",
+      name = "org_apache_ant_ant",
       artifact = "org.apache.ant:ant:1.10.5",
     )
 
 def asm():
     native.maven_jar(
-      name = "asm",
+      name = "org_ow2_asm_asm",
       artifact = "org.ow2.asm:asm:5.0.3",
     )
 
 def commons_io():
     native.maven_jar(
-      name = "commons_io",
+      name = "commons_io_commons_io",
       artifact = "commons-io:commons-io:2.4",
     )
 
@@ -151,139 +151,139 @@ def gson():
 
 def javax_servlet():
     native.maven_jar(
-      name = "javax_servlet",
+      name = "javax_servlet_javax_servlet_api",
       artifact = "javax.servlet:javax.servlet-api:3.1.0",
     )
 
 def javax_validation():
     native.maven_jar(
-      name = "javax_validation",
+      name = "javax_validation_validation_api",
       artifact = "javax.validation:validation-api:1.0.0.GA",
     )
 
 def javax_validation_src():
     native.http_jar(
-      name = "javax_validation_src",
+      name = "javax_validation_validation_api_src",
       url = "http://repo1.maven.org/maven2/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA-sources.jar",
     )
 
 def jetty_webapp():
     native.maven_jar(
-      name = "jetty_webapp",
+      name = "org_eclipse_jetty_jetty_webapp",
       artifact = "org.eclipse.jetty:jetty-webapp:9.2.14.v20151106",
     )
 
 def jetty_servlet():
     native.maven_jar(
-      name = "jetty_servlet",
+      name = "org_eclipse_jetty_jetty_servlet",
       artifact = "org.eclipse.jetty:jetty-servlet:9.2.14.v20151106",
     )
 
 def jetty_server():
     native.maven_jar(
-      name = "jetty_server",
+      name = "org_eclipse_jetty_jetty_server",
       artifact = "org.eclipse.jetty:jetty-server:9.2.14.v20151106",
     )
 
 def jetty_util():
     native.maven_jar(
-      name = "jetty_util",
+      name = "org_eclipse_jetty_jetty_util",
       artifact = "org.eclipse.jetty:jetty-util:9.2.14.v20151106",
     )
 
 def jetty_annotations():
     native.maven_jar(
-      name = "jetty_annotations",
+      name = "org_eclipse_jetty_jetty_annotations",
       artifact = "org.eclipse.jetty:jetty-annotations:9.2.14.v20151106",
     )
 
 def jetty_http():
     native.maven_jar(
-      name = "jetty_http",
+      name = "org_eclipse_jetty_jetty_http",
       artifact = "org.eclipse.jetty:jetty-http:9.2.14.v20151106",
     )
 
 def jetty_io():
     native.maven_jar(
-      name = "jetty_io",
+      name = "org_eclipse_jetty_jetty_io",
       artifact = "org.eclipse.jetty:jetty-io:9.2.14.v20151106",
     )
 
 def jetty_jndi():
     native.maven_jar(
-      name = "jetty_jndi",
+      name = "org_eclipse_jetty_jetty_jndi",
       artifact = "org.eclipse.jetty:jetty-jndi:9.2.14.v20151106",
     )
 
 def jetty_plus():
     native.maven_jar(
-      name = "jetty_plus",
+      name = "org_eclipse_jetty_jetty_plus",
       artifact = "org.eclipse.jetty:jetty-plus:9.2.14.v20151106",
     )
 
 def jetty_security():
     native.maven_jar(
-      name = "jetty_security",
+      name = "org_eclipse_jetty_jetty_security",
       artifact = "org.eclipse.jetty:jetty-security:9.2.14.v20151106",
     )
 
 def jetty_servlets():
     native.maven_jar(
-      name = "jetty_servlets",
+      name = "org_eclipse_jetty_jetty_servlets",
       artifact = "org.eclipse.jetty:jetty-servlets:9.2.14.v20151106",
     )
 
 def jetty_xml():
     native.maven_jar(
-      name = "jetty_xml",
+      name = "org_eclipse_jetty_jetty_xml",
       artifact = "org.eclipse.jetty:jetty-xml:9.2.14.v20151106",
     )
 
 def jsinterop():
     native.maven_jar(
-      name = "jsinterop",
+      name = "com_google_jsinterop_jsinterop_annotations",
       artifact = "com.google.jsinterop:jsinterop-annotations:1.0.2",
       sha1 = "abd7319f53d018e11108a88f599bd16492448dd2",
     )
 
 def jsinterop_src():
     native.http_jar(
-      name = "jsinterop_src",
+      name = "com_google_jsinterop_jsinterop_annotations_src",
       url = "http://central.maven.org/maven2/com/google/jsinterop/jsinterop-annotations/1.0.2/jsinterop-annotations-1.0.2-sources.jar",
     )
 
 def jsr_250():
     native.maven_jar(
-      name = "jsr_250",
+      name = "javax_annotation_javax_annotation_api",
       artifact = "javax.annotation:javax.annotation-api:1.3.2",
     )
 
 def sac():
     native.maven_jar(
-      name = "sac",
+      name = "org_w3c_css_sac",
       artifact = "org.w3c.css:sac:1.3",
     )
 
 def tapestry():
     native.maven_jar(
-      name = "tapestry",
+      name = "tapestry_tapestry",
       artifact = "tapestry:tapestry:4.0.2",
     )
 
 def jsr_305():
     native.maven_jar(
-      name = "jsr_305",
+      name = "com_google_code_findbugs_jsr305",
       artifact = "com.google.code.findbugs:jsr305:1.3.9",
     )
 
 def icu4j():
     native.maven_jar(
-      name = "icu4j",
+      name = "com_ibm_icu_icu4j",
       artifact = "com.ibm.icu:icu4j:50.1.1",
     )
 
 def htmlunit():
     native.maven_jar(
-      name = "htmlunit",
+      name = "net_sourceforge_htmlunit_htmlunit",
       artifact = "net.sourceforge.htmlunit:htmlunit:2.19",
     )
