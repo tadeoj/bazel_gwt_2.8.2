@@ -1,7 +1,3 @@
-workspace(name = "bazel_gwt_2_8_2")
+load("//bazel:gwt_2_8_2_deps.bzl", "generated_maven_jars")
 
-load("//:repositories.bzl", "gwt_repositories")
-
-gwt_repositories()
-
-load("//:gwt_application.bzl","gwt_application")
+generated_maven_jars()
