@@ -718,3 +718,10 @@ def all_maven_jars():
             "@org_eclipse_jetty_jetty_util//jar",
         ],
     )
+
+    jvm_maven_import_external(
+        name = "net_sourceforge_nekohtml_nekohtml",
+        artifact = "net.sourceforge.nekohtml:nekohtml:1.9.22",
+        server_urls = ["http://central.maven.org/maven2"],
+        licenses = ["notice"],  # Apache 2.0 License
+    )
