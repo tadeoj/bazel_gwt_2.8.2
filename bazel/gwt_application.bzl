@@ -66,7 +66,7 @@ def _gwt_war_impl(ctx):
 _gwt_war = rule(
     implementation = _gwt_war_impl,
     attrs = {
-        "deps": attr.label_list(allow_files = FileType([".jar"])),
+        "deps": attr.label_list(allow_files = True),
         "pubs": attr.label_list(allow_files = True),
         "modules": attr.string_list(mandatory = True),
         "output_root": attr.string(default = "."),
@@ -148,7 +148,7 @@ _gwt_dev = rule(
     attrs = {
         "package_name": attr.string(mandatory = True),
         "java_roots": attr.string_list(mandatory = True),
-        "deps": attr.label_list(mandatory = True, allow_files = FileType([".jar"])),
+        "deps": attr.label_list(mandatory = True, allow_files = True),
         "modules": attr.string_list(mandatory = True),
         "pubs": attr.label_list(allow_files = True),
         "output_root": attr.string(default = "."),
