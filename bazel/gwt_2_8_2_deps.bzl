@@ -3,6 +3,7 @@ load("@bazel_tools//tools/build_defs/repo:jvm.bzl", "jvm_maven_import_external")
 
 def generated_maven_jars(
         omit_commons_io_commons_io = False,
+        omit_org_apache_commons_commons_io = False,
         omit_com_google_code_findbugs_jsr305 = False,
         omit_javax_annotation_javax_annotation_api = False,
         omit_commons_codec_commons_codec = False,
@@ -13,6 +14,8 @@ def generated_maven_jars(
         omit_org_apache_commons_commons_lang3 = False):
     if not omit_commons_io_commons_io:
         commons_io_commons_io_native()
+    if not omit_org_apache_commons_commons_io:
+        org_apache_commons_commons_io_native()
     if not omit_com_google_code_findbugs_jsr305:
         com_google_code_findbugs_jsr305_native()
     if not omit_javax_annotation_javax_annotation_api:
@@ -35,6 +38,14 @@ def commons_io_commons_io_native():
     jvm_maven_import_external(
         name = "commons_io_commons_io",
         artifact = "commons-io:commons-io:2.4",
+        server_urls = ["http://central.maven.org/maven2"],
+        licenses = ["notice"],  # Apache 2.0
+    )
+
+def org_apache_commons_commons_io_native():
+    jvm_maven_import_external(
+        name = "org_apache_commons_commons_io",
+        artifact = "org.apache.commons:commons-io:1.3.2",
         server_urls = ["http://central.maven.org/maven2"],
         licenses = ["notice"],  # Apache 2.0
     )
