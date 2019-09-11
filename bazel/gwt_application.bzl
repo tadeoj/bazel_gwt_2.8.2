@@ -76,7 +76,7 @@ _gwt_war = rule(
             default = Label("@bazel_tools//tools/jdk:java"),
             executable = True,
             cfg = "host",
-            single_file = True,
+            allow_single_file = True,
             allow_files = True,
         ),
         "_jdk": attr.label(
@@ -86,7 +86,7 @@ _gwt_war = rule(
             default = Label("@bazel_tools//tools/zip:zipper"),
             executable = True,
             cfg = "host",
-            single_file = True,
+            allow_single_file = True,
         ),
     },
     outputs = {
@@ -158,7 +158,7 @@ _gwt_dev = rule(
             default = Label("@bazel_tools//tools/jdk:java"),
             executable = True,
             cfg = "host",
-            single_file = True,
+            allow_single_file = True,
             allow_files = True,
         ),
         "_jdk": attr.label(
