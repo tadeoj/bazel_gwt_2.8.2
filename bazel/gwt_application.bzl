@@ -55,7 +55,7 @@ def _gwt_war_impl(ctx):
     cmd += "cd $root\n"
 
     # Execute the command
-    ctx.actions.run(
+    ctx.actions.run_shell(
         inputs = ctx.files.pubs + list(all_deps) + ctx.files._jdk + ctx.files._zip,
         outputs = [output_war],
         mnemonic = "GwtCompile",
