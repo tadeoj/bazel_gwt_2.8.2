@@ -56,7 +56,8 @@ def _gwt_war_impl(ctx):
 
     # Execute the command
     ctx.actions.run_shell(
-        inputs = ctx.files.pubs + list(all_deps) + ctx.files._jdk + ctx.files._zip,
+        inputs = ctx.files.pubs + list(all_deps),
+        tools = ctx.files._jdk + ctx.files._zip,
         outputs = [output_war],
         mnemonic = "GwtCompile",
         progress_message = "GWT compiling " + output_war.short_path,
